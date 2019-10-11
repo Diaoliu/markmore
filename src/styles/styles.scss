@@ -1,0 +1,47 @@
+$base-font-family: 'Source Sans Pro',-apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+$font-size: .7rem;
+$font-size-sm: .6rem;
+$font-size-lg: .8rem;
+$shadow-color: rgba(32,34,36,0.2);
+
+@import "~spectre.css/src/spectre";
+@import "codemirror";
+
+@include padding-variant(3, $unit-3);
+@include padding-variant(4, $unit-4);
+@include margin-variant(3, $unit-3);
+@include margin-variant(4, $unit-4);
+
+:focus {
+  box-shadow: none !important;
+}
+
+main {
+  position: absolute;
+  top: 102px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.has-shadow {
+  box-shadow: 0 0 4px $shadow-color;
+}
+
+.z-index-1 {
+  position: relative;
+  z-index: 100;
+}
+
+.bg-default {
+  background-color: white
+}
+
+.material-icons {
+  font-size: 18px;
+  line-height: inherit;
+}
+
+.tab {
+  border: none;
+}
